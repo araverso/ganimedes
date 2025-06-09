@@ -9,6 +9,7 @@
     --color-terciario: #580d0c;
     --color-claro: #F1EAE5;
     --color-oscuro: #000000;
+    --color-blanco: white;
     --fuente-primaria: "Art-nuvo";
     --fuente-secundaria: "Montserrat";
 }
@@ -19,12 +20,12 @@ html{
 
 body{
     margin: 0%;
-    background-color: var(--color-claro);
+    background-color: var(--color-blanco);
     font-family: var(--fuente-secundaria);
 }
 
 header{
-    background-color: var(--color-claro);
+    background-color: var(--color-blanco);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +67,6 @@ header{
     display: block;
 }
 
-
 .img_log{
     width: 70px;
 }
@@ -99,6 +99,9 @@ a:hover{
     color: var(--color-oscuro);
 }
 
+
+/*Index*/
+
 .main_presentacion{
     display: flex;
     flex-direction: column;
@@ -112,6 +115,13 @@ a:hover{
     font-size: 70px;
 }
 
+.main-horizontal{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+    padding: 5%;
+    place-items: center;
+    justify-content: space-around;
+}
 .seccion{
     display: flex;
     flex-direction: column;
@@ -277,7 +287,7 @@ footer{
 }
 
 .item-footer:hover{
-    background-color: rgba(169, 228, 255, 0.856);
+    color: #00325a;
 }
 
 .fa-instagram{
