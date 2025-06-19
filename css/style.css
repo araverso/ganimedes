@@ -187,7 +187,6 @@ h2{
 
 .contenedor{
     position: relative;
-
 }
 
 .transicion{
@@ -250,11 +249,11 @@ grid-template-columns: 1fr 0.6fr;
 }
 
 
-/*Revisar*/
+/*Productos*/
+
 .grilla{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
     margin: 2%;
 }
 
@@ -263,26 +262,36 @@ grid-template-columns: 1fr 0.6fr;
     flex-direction: column;
     margin: 5%;
     padding-top: 8%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgb(156, 146, 146);
+    font-weight: bold;
+    /* box-shadow: 0px 0px 10px rgb(156, 146, 146);*/
 }
 
-.imagen{
-    box-shadow: 0px 0px 10px rgb(156, 146, 146);
-    border-radius: 10px;
-}
-
-.item_imagen{
-    transition: transform 0.5s ease-in-out;
-}
-
-.item_imagen:hover{
-    transform: scale(1.05);
+.item-contenedor{
+    color: #000000;
 }
 
 .producto_informacion{
-    border: 0.5px solid rgb(156, 146, 146);
-    margin: 10%;
+    padding: 5%;
+}
+.comprar{
+    background-color: var(--color-primario);
+    border: none;
+    color: var(--color-oscuro);
+    padding: 5%;
+    border-radius: 10px;
+    margin-right: 4%;
+}
+
+.comprar:hover{
+    background-color: var(--color-secundario);
+}
+
+
+/*Otra cosa*/
+
+
+.imagen{ /*No se de qué es*/
+    box-shadow: 0px 0px 10px rgb(156, 146, 146);
     border-radius: 10px;
 }
 

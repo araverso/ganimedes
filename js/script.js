@@ -1,4 +1,4 @@
-console.log("dhius")
+console.log(2+"3")
 /*
 let numero1 = parseInt(prompt("Ingrese un numero"));
 let numero2 = 4;
