@@ -286,6 +286,18 @@ grid-template-columns: 1fr 0.6fr;
     background-color: var(--color-secundario);
 }
 
+.ver{
+    background-color: var(--color-primario);
+    border: none;
+    color: var(--color-oscuro);
+    padding: 6%;
+    border-radius: 10px;
+    margin-right: 4%;
+}
+
+.ver:hover{
+    background-color: var(--color-secundario);
+}
 
 /*Otra cosa*/
 
@@ -303,7 +315,6 @@ grid-template-columns: 1fr 0.6fr;
     color: #000000;
     font-size: 20px;
 }
-
 
 /* Pagina de contacto y mapa*/
 
