@@ -11,8 +11,8 @@
 
 - HTML5
 - CSS
+- JavaScript
 
  ## 📁 Enlaces al proyecto
 
 - https://araverso.github.io/ganimedes-accesorios/
-- https://ganimedes-accesorios.netlify.app/
