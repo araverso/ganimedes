@@ -5,7 +5,7 @@
 
 :root{
     --color-primario:rgb(135, 183, 223);
-    --color-secundario:#E3B5CF;
+    --color-secundario: rgb(247, 219, 235);
     --color-terciario: #580d0c;
     --color-claro: #f1eae5;
     --color-oscuro: #000000;
@@ -323,15 +323,14 @@ grid-template-columns: 1fr 0.6fr;
     grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
 }
 
-.mapa{
-    margin: 5%;
-}
-
-.formulario{
+.informacion{
     display: flex;
     flex-direction: column;
     font-family: var(--fuente-secundaria);
     padding: 5%;
+    background-color: rgba(129, 185, 218, 0.2);
+    border-radius: 20px;
+    margin: 2%;
 }
 
 .input-form{
@@ -343,24 +342,21 @@ grid-template-columns: 1fr 0.6fr;
     padding: 2%;
 }
 
-/*Elementos generales*/
+/*Formulario*/
 
 .boton{
-    margin: 2%;
-    padding: 4%;
-    border: solid var(--color-primario);
+    padding: 2%;
+    border: solid var(--color-primario) 2px;
     border-radius: 10px;
-    width: auto;
-    height: auto;
-    text-align: center;
+    background-color: rgba(129, 185, 218, 0.2);
+    margin-left: 4%;
 }
 
 .boton:hover{
-    background-color: var(--color-primario);
+    background-color: var(--color-secundario);
 }    
 
 .texto{
-    background-color: rgba(129, 185, 218, 0.8);
     padding: 5%;
     border-radius: 10px;
     font-size: 20px;
