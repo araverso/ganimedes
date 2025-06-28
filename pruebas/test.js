@@ -31,3 +31,16 @@ let boton = document.getElementById("miBoton");
 boton.addEventListener("click",function(){
     boton.style.backgroundColor = "red";
 })
+
+sessionStorage.setItem('Usuario','Ara')
+
+let fecha = Date()
+
+console.log(fecha)
+
+console.log(2+"3")
+/*
+let numero1 = parseInt(prompt("Ingrese un numero"));
+let numero2 = 4;
+console.log(numero1 + numero2)
+*/

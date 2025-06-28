@@ -4,9 +4,10 @@
 }
 
 :root{
-    --color-primario:rgb(135, 183, 223);
+    --color-primario:#87b7df;
     --color-secundario: rgb(247, 219, 235);
     --color-terciario: #580d0c;
+    --color-primario-transparencia: rgba(129, 185, 218, 0.2);
     --color-claro: #f1eae5;
     --color-oscuro: #000000;
     --color-blanco: white;
@@ -88,6 +89,26 @@ header{
     border: 1px solid black;
 }
 
+/*Offcanva*/
+
+.offcanvas{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-blanco);
+    font-family: var(--fuente-secundaria);
+}
+
+.offcanvas-title{
+    padding-left: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.offcanvas-body{
+    border-radius: 20px;
+    padding: 2;
+}
+
 /*Elementos generales*/
 
 ul{
@@ -166,6 +187,8 @@ h2{
     margin: 3%;
 }
 
+/*Inicio - presentación de productos*/
+
 .grilla-inicio{
     display: grid;
     align-items: center;
@@ -189,7 +212,7 @@ h2{
     position: relative;
 }
 
-.transicion{
+.transicion{ /*Transición de imagen*/
     position: absolute;
     top: 0;
     bottom: 0;
@@ -198,11 +221,41 @@ h2{
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .3s ease;
+    transition: .3s ease-in-out;
 }
 
 .contenedor:hover .transicion{
     opacity: 1;
+}
+
+.imagen{
+    box-shadow: 0px 0px 10px var(--color-primario-transparencia);
+    border-radius: 10px;
+}
+
+.boton-inicio{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-boton{ /*Clase para que el boton funcione y no de celeste*/
+    color: #000000;
+    font-size: 20px;
+}
+
+.transicion-linea{
+    background: linear-gradient(to right, transparent, var(--color-primario), transparent);
+    width: 0px;
+    height: 3px;
+    transition: width 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.grilla-inicio-item:hover .transicion-linea{
+    width: 100px;
 }
 
 /*Banner*/
@@ -211,7 +264,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(135, 183, 223, 0.7);
+    background-color: rgba(129, 185, 218, 0.4);
     font-family: var(--fuente-secundaria);
     padding: 2%;
 }
@@ -299,22 +352,6 @@ grid-template-columns: 1fr 0.6fr;
     background-color: var(--color-secundario);
 }
 
-/*Otra cosa*/
-
-
-.imagen{ /*No se de qué es*/
-    box-shadow: 0px 0px 10px rgb(156, 146, 146);
-    border-radius: 10px;
-}
-
-.boton-inicio{
-    padding: 5%;
-}
-
-.titulo-boton{
-    color: #000000;
-    font-size: 20px;
-}
 
 /* Pagina de contacto y mapa*/
 
